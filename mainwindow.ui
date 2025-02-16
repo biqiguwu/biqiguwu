@@ -1,0 +1,7318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>814</width>
+    <height>524</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QToolButton{
+    border: 1px solid #000000; /* 设置边框宽度和样式 */
+	border-radius:15px;
+}
+QToolButton:hover{
+	border-color:rgb(0, 170, 255);
+}
+QLineEdit#xia_piece{
+	border:none;
+	font:20px&quot;楷体&quot;;
+}
+
+QPushButton#xia_p:hover{
+	border-color:rgb(0, 170, 255)
+}
+QPushButton#xia_p{
+	
+	image: url(:/xia.png);
+	border-radius: 20px;
+}
+
+QLineEdit#xia_text{
+	font:20px&quot;楷体&quot;;
+	border:none;
+}
+
+QLineEdit#xia_line{
+	font:30px&quot;楷体&quot;;
+	border:none
+}
+
+QLineEdit#leibie{
+	font:40px &quot;楷体&quot;;
+	border:none;
+	border-left:1px solid rgb(229,229,229);
+	background-color: rgb(217, 217, 217);
+}
+
+QLineEdit#caipin{
+	font:40px &quot;楷体&quot;;
+	border:none;
+	border-left:1px solid rgb(229,229,229);
+	background-color: rgb(217, 217, 217);
+}
+
+QPushButton#searchbt{
+	border:none
+}
+
+QWidget#centralwidget{
+	background-color: rgb(255, 255, 255);
+}
+
+QLineEdit#search{
+	
+	border-radius: 15px;
+	background-color: rgb(217, 217, 217);
+	image-position:left ;
+}
+
+QPushButton{
+	border:none;
+	border-right:1px solid rgb(229,229,229);
+	border-bottom:1px solid rgb(229,229,229);
+	font:30px &quot;楷体&quot;;
+	
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:hover{
+	border-bottom:1px solid rgb(193,193,193);
+	
+	background-color: rgb(85, 170, 255);
+}
+
+QPushButton:focus{
+	
+	background-color: rgb(0, 170, 255);
+	border-color: rgb(0, 0, 255);
+}
+
+QPushButton#menu{
+	image: url(:/menu.png);
+	image-position:left ;
+}
+
+QPushButton#table{
+	image: url(:/table.png);
+	image-position:left ;
+}
+
+QPushButton#order{
+	image: url(:/order.png);
+	image-position:left ;
+}
+
+QPushButton#comknow{
+	image: url(:/comknow.png);
+	image-position:left ;
+}
+
+QPushButton#message{
+	image: url(:/message.png);
+	image-position:left ;
+}
+
+QPushButton#my{
+	image: url(:/my.png);
+	image-position:left ;
+}
+
+QPushButton#rebt{
+	image: url(:/back.png);
+	image-position:left;
+}
+
+QTextEdit#menu_main{
+	border:none;
+	
+	background-color: rgb(217, 217, 217);
+	border-top:1px solid rgb(229,229,229);
+}
+QLabel#avatar{
+	border-radius:30px;
+}
+QLineEdit#nameline{
+	border:none;
+}
+QLineEdit#numline{
+	border:none;
+}
+
+QPushButton#searchbt{
+	image: url(:/search.png);
+}
+
+QPushButton#mainfood{
+	border-radius: 10px;
+}
+QPushButton#specialfood{
+	border-radius: 10px;
+}
+QPushButton#soup{
+	border-radius: 10px;
+}
+QPushButton#snack{
+	border-radius: 10px;
+}
+QPushButton#drink{
+	border-radius: 10px;
+}
+QPushButton#mainfood:focus{
+	
+	border-color: rgb(0, 0, 255);
+}</string>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="rebt">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>430</y>
+      <width>150</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>    注 销</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="logo">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>150</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-right:1px rgb(240, 240, 240);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="images.qrc">:/logo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="my">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>378</y>
+      <width>150</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>    我 的</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="message">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>329</y>
+      <width>150</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>    留 言</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="comknow">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>280</y>
+      <width>150</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>    常 识</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="order">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>231</y>
+      <width>150</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>    订 单</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="table">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>182</y>
+      <width>150</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>    桌 台</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="menu">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>133</y>
+      <width>150</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>    菜 单</string>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>0</y>
+      <width>671</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(230, 230, 230);
+font:20px &quot;楷体&quot;</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QLineEdit" name="search">
+      <property name="geometry">
+       <rect>
+        <x>49</x>
+        <y>20</y>
+        <width>251</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+	font:20px &quot;楷体&quot;;
+	
+	background-color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="avatar">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>0</y>
+        <width>60</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="images.qrc">:/2.bmp</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="nameline">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>10</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>张三</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="numline">
+      <property name="geometry">
+       <rect>
+        <x>489</x>
+        <y>40</y>
+        <width>121</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>15913820903</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="searchbt">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>20</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton{
+	image: url(:/search_hui.png);
+}
+
+QPushButton:hover{
+	image: url(:/search.png);
+	
+	background-color: rgb(255, 255, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="leibie">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(230, 230, 230);
+font:30px &quot;kai&quot;</string>
+      </property>
+      <property name="text">
+       <string>类 别</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="mainfood">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>110</y>
+        <width>120</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{background-color: rgb(255, 255, 255);}
+QPushButton:hover{
+	
+	background-color: rgb(0, 170, 255);
+}
+QPushButton:focus{
+	
+	background-color: rgb(0, 170, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="specialfood">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>110</y>
+        <width>150</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{background-color: rgb(255, 255, 255);}
+QPushButton:hover{
+	
+	background-color: rgb(0, 170, 255);
+}
+QPushButton:focus{
+	
+	background-color: rgb(0, 170, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="soup">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>110</y>
+        <width>120</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{background-color: rgb(255, 255, 255);}
+QPushButton:hover{
+	
+	background-color: rgb(0, 170, 255);
+}
+QPushButton:focus{
+	
+	background-color: rgb(0, 170, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="snack">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>110</y>
+        <width>110</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{background-color: rgb(255, 255, 255);}
+QPushButton:hover{
+	
+	background-color: rgb(0, 170, 255);
+}
+QPushButton:focus{
+	
+	background-color: rgb(0, 170, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="drink">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>110</y>
+        <width>120</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{background-color: rgb(255, 255, 255);}
+QPushButton:hover{
+	
+	background-color: rgb(0, 170, 255);
+}
+QPushButton:focus{
+	
+	background-color: rgb(0, 170, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="caipin">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(230, 230, 230);
+font:30px &quot;kai&quot;</string>
+      </property>
+      <property name="text">
+       <string>菜 品</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QStackedWidget" name="stackedWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>230</y>
+        <width>671</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_6">
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>5</x>
+          <y>1</y>
+          <width>661</width>
+          <height>231</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(230, 230, 230);
+</string>
+        </property>
+        <property name="showGrid">
+         <bool>true</bool>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>330</number>
+        </attribute>
+        <attribute name="horizontalHeaderHighlightSections">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderDefaultSectionSize">
+         <number>200</number>
+        </attribute>
+        <attribute name="verticalHeaderHighlightSections">
+         <bool>true</bool>
+        </attribute>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QWidget" name="widget_main1" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>321</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="widget_xia" native="true">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>301</width>
+           <height>181</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+	background-color: rgb(255, 255, 255);
+	border-radius:20px;
+	border:1px solid black;
+}
+
+QWidget:hover{
+	border-radius:20px;
+	border:1px solid blue;
+}
+QToolButton{
+
+	border-radius:15px;
+}
+QPushButton:hover{
+	background-color: rgb(0, 170, 255);
+}
+QToolButton:hover{
+	color: rgb(0, 170, 255);
+}</string>
+         </property>
+         <widget class="QToolButton" name="xia_jia">
+          <property name="geometry">
+           <rect>
+            <x>79</x>
+            <y>140</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="xia_text">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>60</y>
+            <width>174</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:20px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>Q弹饱满，蒜香浓郁</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="xia_tu">
+          <property name="geometry">
+           <rect>
+            <x>9</x>
+            <y>10</y>
+            <width>101</width>
+            <height>101</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+	background-color: ;
+	background-color: rgb(230, 230, 230);
+	border-radius:15px;
+}
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="images.qrc">:/xia.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="xia_num">
+          <property name="geometry">
+           <rect>
+            <x>49</x>
+            <y>140</y>
+            <width>21</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+
+	border:none;
+}</string>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="xia_bt">
+          <property name="geometry">
+           <rect>
+            <x>129</x>
+            <y>140</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius:10px;
+	font:20px;
+	border-left:1px solid rgb(229,229,229);
+	border-top:1px solid rgb(229,229,229);
+	
+}</string>
+          </property>
+          <property name="text">
+           <string>加入购物车</string>
+          </property>
+         </widget>
+         <widget class="QToolButton" name="xia_jian">
+          <property name="geometry">
+           <rect>
+            <x>9</x>
+            <y>140</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="xia_line">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>20</y>
+            <width>179</width>
+            <height>34</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:30px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>蒜蓉小龙虾</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="xia_piece">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>90</y>
+            <width>174</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:20px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>￥40.00</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="widget_main2" native="true">
+        <property name="geometry">
+         <rect>
+          <x>309</x>
+          <y>-1</y>
+          <width>331</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="widget_rose" native="true">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>10</y>
+           <width>301</width>
+           <height>181</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+	background-color: rgb(255, 255, 255);
+	border-radius:20px;
+	border:1px solid black;
+}
+
+QWidget:hover{
+	border-radius:20px;
+	border:1px solid blue;
+}
+QToolButton{
+
+	border-radius:15px;
+}
+QPushButton:hover{
+	background-color: rgb(0, 170, 255);
+}
+QToolButton:hover{
+	color: rgb(0, 170, 255);
+}</string>
+         </property>
+         <widget class="QToolButton" name="rose_jia">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>140</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="xia_text_3">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>60</y>
+            <width>174</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:20px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>Q弹饱满，蒜香浓郁</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="xia_tu_3">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>101</width>
+            <height>101</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+	background-color: ;
+	background-color: rgb(230, 230, 230);
+	border-radius:15px;
+}
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="images.qrc">:/rose.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="rose_num">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>140</y>
+            <width>21</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+
+	border:none;
+}</string>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="xia_bt_3">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>140</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius:10px;
+	font:20px;
+	border-left:1px solid rgb(229,229,229);
+	border-top:1px solid rgb(229,229,229);
+	
+}</string>
+          </property>
+          <property name="text">
+           <string>加入购物车</string>
+          </property>
+         </widget>
+         <widget class="QToolButton" name="rose_jian">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>140</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="xia_line_3">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>20</y>
+            <width>179</width>
+            <height>34</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:30px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>鱼香肉丝</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="xia_piece_3">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>90</y>
+            <width>174</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:20px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>￥30.00</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_7">
+       <widget class="QTableWidget" name="tableWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>5</x>
+          <y>-9</y>
+          <width>661</width>
+          <height>261</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>330</number>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderDefaultSectionSize">
+         <number>210</number>
+        </attribute>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QWidget" name="widget_special1" native="true">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>-1</y>
+          <width>321</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="widget_xia_2" native="true">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>301</width>
+           <height>181</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+	background-color: rgb(255, 255, 255);
+	border-radius:20px;
+	border:1px solid black;
+}
+
+QWidget:hover{
+	border-radius:20px;
+	border:1px solid blue;
+}
+QToolButton{
+
+	border-radius:15px;
+}
+QPushButton:hover{
+	background-color: rgb(0, 170, 255);
+}
+QToolButton:hover{
+	color: rgb(0, 170, 255);
+}</string>
+         </property>
+         <widget class="QToolButton" name="mei_jia">
+          <property name="geometry">
+           <rect>
+            <x>79</x>
+            <y>140</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="xia_text_6">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>60</y>
+            <width>174</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:20px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>Q弹饱满，蒜香浓郁</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="xia_tu_6">
+          <property name="geometry">
+           <rect>
+            <x>9</x>
+            <y>10</y>
+            <width>101</width>
+            <height>101</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+	background-color: ;
+	background-color: rgb(230, 230, 230);
+	border-radius:15px;
+}
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="images.qrc">:/meicai.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="mei_num">
+          <property name="geometry">
+           <rect>
+            <x>49</x>
+            <y>140</y>
+            <width>21</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+
+	border:none;
+}</string>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="xia_bt_4">
+          <property name="geometry">
+           <rect>
+            <x>129</x>
+            <y>140</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius:10px;
+	font:20px;
+	border-left:1px solid rgb(229,229,229);
+	border-top:1px solid rgb(229,229,229);
+	
+}</string>
+          </property>
+          <property name="text">
+           <string>加入购物车</string>
+          </property>
+         </widget>
+         <widget class="QToolButton" name="mei_jian">
+          <property name="geometry">
+           <rect>
+            <x>9</x>
+            <y>140</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="xia_line_6">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>20</y>
+            <width>179</width>
+            <height>34</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:30px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>梅菜扣肉</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="xia_piece_6">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>90</y>
+            <width>174</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:20px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>￥30.00</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="widget_special2" native="true">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>0</y>
+          <width>301</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="widget_xia_3" native="true">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>301</width>
+           <height>181</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+	background-color: rgb(255, 255, 255);
+	border-radius:20px;
+	border:1px solid black;
+}
+
+QWidget:hover{
+	border-radius:20px;
+	border:1px solid blue;
+}
+QToolButton{
+
+	border-radius:15px;
+}
+QPushButton:hover{
+	background-color: rgb(0, 170, 255);
+}
+QToolButton:hover{
+	color: rgb(0, 170, 255);
+}</string>
+         </property>
+         <widget class="QToolButton" name="gu_jia">
+          <property name="geometry">
+           <rect>
+            <x>79</x>
+            <y>140</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="xia_text_7">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>60</y>
+            <width>174</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:20px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>Q弹饱满，蒜香浓郁</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="xia_tu_7">
+          <property name="geometry">
+           <rect>
+            <x>9</x>
+            <y>10</y>
+            <width>101</width>
+            <height>101</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+	background-color: ;
+	background-color: rgb(230, 230, 230);
+	border-radius:15px;
+}
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="images.qrc">:/xianggu.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="gu_num">
+          <property name="geometry">
+           <rect>
+            <x>49</x>
+            <y>140</y>
+            <width>21</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+
+	border:none;
+}</string>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="xia_bt_5">
+          <property name="geometry">
+           <rect>
+            <x>129</x>
+            <y>140</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius:10px;
+	font:20px;
+	border-left:1px solid rgb(229,229,229);
+	border-top:1px solid rgb(229,229,229);
+	
+}</string>
+          </property>
+          <property name="text">
+           <string>加入购物车</string>
+          </property>
+         </widget>
+         <widget class="QToolButton" name="gu_jian">
+          <property name="geometry">
+           <rect>
+            <x>9</x>
+            <y>140</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="xia_line_7">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>20</y>
+            <width>131</width>
+            <height>34</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:30px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>香菇滑鸡</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="xia_piece_7">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>90</y>
+            <width>131</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:20px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>￥30.00</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_8">
+       <widget class="QTableWidget" name="tableWidget_5">
+        <property name="geometry">
+         <rect>
+          <x>5</x>
+          <y>1</y>
+          <width>661</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(230, 230, 230);</string>
+        </property>
+        <property name="showGrid">
+         <bool>true</bool>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>330</number>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderDefaultSectionSize">
+         <number>200</number>
+        </attribute>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QWidget" name="widget_soup1" native="true">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>-1</y>
+          <width>321</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="widget_11" native="true">
+         <property name="geometry">
+          <rect>
+           <x>9</x>
+           <y>9</y>
+           <width>311</width>
+           <height>181</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+	background-color: rgb(255, 255, 255);
+	border-radius:20px;
+	border:1px solid black;
+}
+
+QWidget:hover{
+	border-radius:20px;
+	border:1px solid blue;
+}
+QToolButton{
+
+	border-radius:15px;
+}
+QPushButton:hover{
+	background-color: rgb(0, 170, 255);
+}
+QToolButton:hover{
+	color: rgb(0, 170, 255);
+}</string>
+         </property>
+         <widget class="QToolButton" name="meicai_jian_3">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>140</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="meicai_text_3">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>60</y>
+            <width>181</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:20px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>汁清味美，鲜嫩滑爽</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="meicai_tu_3">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>101</width>
+            <height>101</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+	background-color: ;
+	background-color: rgb(230, 230, 230);
+	border-radius:15px;
+}
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="images.qrc">:/huanggua.webp</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="meicai_bt_3">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>140</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius:10px;
+	font:20px;
+	border-left:1px solid rgb(229,229,229);
+	border-top:1px solid rgb(229,229,229);
+	
+}</string>
+          </property>
+          <property name="text">
+           <string>加入购物车</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="meicai_line_3">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>20</y>
+            <width>161</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:30px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>瘦肉花胶汤</string>
+          </property>
+          <property name="readOnly">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="meicai_piece_3">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>90</y>
+            <width>113</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:20px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>￥20.00</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QToolButton" name="meicai_jia_3">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>140</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="huang_num">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>140</y>
+            <width>21</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+
+	border:none;
+}</string>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="widget_soup2" native="true">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>0</y>
+          <width>321</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="widget_13" native="true">
+         <property name="geometry">
+          <rect>
+           <x>9</x>
+           <y>9</y>
+           <width>311</width>
+           <height>181</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+	background-color: rgb(255, 255, 255);
+	border-radius:20px;
+	border:1px solid black;
+}
+
+QWidget:hover{
+	border-radius:20px;
+	border:1px solid blue;
+}
+QToolButton{
+
+	border-radius:15px;
+}
+QPushButton:hover{
+	background-color: rgb(0, 170, 255);
+}
+QToolButton:hover{
+	color: rgb(0, 170, 255);
+}</string>
+         </property>
+         <widget class="QToolButton" name="meicai_jian_11">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>140</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="meicai_text_11">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>60</y>
+            <width>181</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:20px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>汁清味美，鲜嫩滑爽</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="meicai_tu_11">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>101</width>
+            <height>101</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+	background-color: ;
+	background-color: rgb(230, 230, 230);
+	border-radius:15px;
+}
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="images.qrc">:/donggua.webp</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="meicai_bt_11">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>140</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius:10px;
+	font:20px;
+	border-left:1px solid rgb(229,229,229);
+	border-top:1px solid rgb(229,229,229);
+	
+}</string>
+          </property>
+          <property name="text">
+           <string>加入购物车</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="meicai_line_11">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>20</y>
+            <width>161</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:30px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>冬瓜薏米汤</string>
+          </property>
+          <property name="readOnly">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="meicai_piece_11">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>90</y>
+            <width>113</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:20px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>￥20.00</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QToolButton" name="meicai_jia_11">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>140</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="dong_num">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>140</y>
+            <width>21</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+
+	border:none;
+}</string>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_9">
+       <widget class="QTableWidget" name="tableWidget_6">
+        <property name="geometry">
+         <rect>
+          <x>5</x>
+          <y>1</y>
+          <width>661</width>
+          <height>231</height>
+         </rect>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>330</number>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderDefaultSectionSize">
+         <number>200</number>
+        </attribute>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QWidget" name="widget_snack1" native="true">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>321</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="widget_12" native="true">
+         <property name="geometry">
+          <rect>
+           <x>9</x>
+           <y>9</y>
+           <width>311</width>
+           <height>181</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+	background-color: rgb(255, 255, 255);
+	border-radius:20px;
+	border:1px solid black;
+}
+
+QWidget:hover{
+	border-radius:20px;
+	border:1px solid blue;
+}
+QToolButton{
+
+	border-radius:15px;
+}
+QPushButton:hover{
+	background-color: rgb(0, 170, 255);
+}
+QToolButton:hover{
+	color: rgb(0, 170, 255);
+}</string>
+         </property>
+         <widget class="QToolButton" name="meicai_jian_9">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>140</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="meicai_text_9">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>60</y>
+            <width>181</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:20px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>汁清味美，鲜嫩滑爽</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="meicai_tu_9">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>101</width>
+            <height>101</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+	background-color: ;
+	background-color: rgb(230, 230, 230);
+	border-radius:15px;
+}
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="images.qrc">:/jiaozi.webp</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="meicai_bt_9">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>140</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius:10px;
+	font:20px;
+	border-left:1px solid rgb(229,229,229);
+	border-top:1px solid rgb(229,229,229);
+	
+}</string>
+          </property>
+          <property name="text">
+           <string>加入购物车</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="meicai_line_9">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>20</y>
+            <width>161</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:30px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>蒸饺</string>
+          </property>
+          <property name="readOnly">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="meicai_piece_9">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>90</y>
+            <width>113</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:20px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>￥20.00</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QToolButton" name="meicai_jia_9">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>140</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="jiao_num">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>140</y>
+            <width>21</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+
+	border:none;
+}</string>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="widget_snack2" native="true">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>10</y>
+          <width>321</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="widget_14" native="true">
+         <property name="geometry">
+          <rect>
+           <x>9</x>
+           <y>9</y>
+           <width>311</width>
+           <height>181</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+	background-color: rgb(255, 255, 255);
+	border-radius:20px;
+	border:1px solid black;
+}
+
+QWidget:hover{
+	border-radius:20px;
+	border:1px solid blue;
+}
+QToolButton{
+	
+	border-radius:15px;
+}
+QPushButton:hover{
+	background-color: rgb(0, 170, 255);
+}
+QToolButton:hover{
+	color: rgb(0, 170, 255);
+}</string>
+         </property>
+         <widget class="QToolButton" name="meicai_jian_10">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>140</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="meicai_text_10">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>60</y>
+            <width>181</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:20px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>汁清味美，鲜嫩滑爽</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="meicai_tu_10">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>101</width>
+            <height>101</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+	background-color: ;
+	background-color: rgb(230, 230, 230);
+	border-radius:15px;
+}
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="images.qrc">:/chunjuan.webp</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="meicai_bt_10">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>140</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius:10px;
+	font:20px;
+	border-left:1px solid rgb(229,229,229);
+	border-top:1px solid rgb(229,229,229);
+	
+}</string>
+          </property>
+          <property name="text">
+           <string>加入购物车</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="meicai_line_10">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>20</y>
+            <width>161</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:30px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>春卷</string>
+          </property>
+          <property name="readOnly">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="meicai_piece_10">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>90</y>
+            <width>113</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:20px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>￥20.00</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QToolButton" name="meicai_jia_10">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>140</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="juan_num">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>140</y>
+            <width>21</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+
+	border:none;
+}</string>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_10">
+       <widget class="QTableWidget" name="tableWidget_drink">
+        <property name="geometry">
+         <rect>
+          <x>5</x>
+          <y>1</y>
+          <width>661</width>
+          <height>261</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(230, 230, 230);</string>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>320</number>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderDefaultSectionSize">
+         <number>200</number>
+        </attribute>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>新建行</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>新建列</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QWidget" name="drink_bg1" native="true">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>311</width>
+          <height>191</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="widget_8" native="true">
+         <property name="geometry">
+          <rect>
+           <x>9</x>
+           <y>9</y>
+           <width>291</width>
+           <height>171</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+	background-color: rgb(255, 255, 255);
+	border-radius:20px;
+	border:1px solid black;
+}
+
+QWidget:hover{
+	border-radius:20px;
+	border:1px solid blue;
+}
+QToolButton{
+	
+	border-radius:15px;
+}
+QPushButton:hover{
+	background-color: rgb(0, 170, 255);
+}
+QToolButton:hover{
+	color: rgb(0, 170, 255);
+}</string>
+         </property>
+         <widget class="QLabel" name="meicai_tu_12">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>61</width>
+            <height>151</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+	background-color: ;
+	background-color: rgb(230, 230, 230);
+	border-radius:15px;
+}
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="images.qrc">:/kele.jpg</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="xia_line_8">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>10</y>
+            <width>179</width>
+            <height>34</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:30px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>可口可乐</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="xia_piece_8">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>50</y>
+            <width>174</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:20px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>￥4.0</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QToolButton" name="xia_jian_6">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>80</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+         <widget class="QToolButton" name="xia_jia_6">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>80</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="xia_bt_10">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>120</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius:10px;
+	font:20px;
+	border-left:1px solid rgb(229,229,229);
+	border-top:1px solid rgb(229,229,229);
+	
+}</string>
+          </property>
+          <property name="text">
+           <string>加入购物车</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="xia_num_4">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>80</y>
+            <width>21</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+
+	border:none;
+}</string>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="drink_bg1_2" native="true">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>10</y>
+          <width>311</width>
+          <height>191</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="widget_15" native="true">
+         <property name="geometry">
+          <rect>
+           <x>9</x>
+           <y>9</y>
+           <width>291</width>
+           <height>171</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+	background-color: rgb(255, 255, 255);
+	border-radius:20px;
+	border:1px solid black;
+}
+
+QWidget:hover{
+	border-radius:20px;
+	border:1px solid blue;
+}
+QToolButton{
+	
+	border-radius:15px;
+}
+QPushButton:hover{
+	background-color: rgb(0, 170, 255);
+}
+QToolButton:hover{
+	color: rgb(0, 170, 255);
+}</string>
+         </property>
+         <widget class="QLabel" name="meicai_tu_13">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>111</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+	background-color: ;
+	background-color: rgb(230, 230, 230);
+	border-radius:15px;
+}
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="images.qrc">:/wang.webp</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="xia_line_9">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>10</y>
+            <width>101</width>
+            <height>34</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:30px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>王老吉</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="xia_piece_9">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>50</y>
+            <width>71</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border:none;
+	font:20px &quot;楷体&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>￥4.0</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QToolButton" name="xia_jian_7">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>80</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+         <widget class="QToolButton" name="xia_jia_7">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>80</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="xia_bt_11">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>120</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border-radius:10px;
+	font:20px;
+	border-left:1px solid rgb(229,229,229);
+	border-top:1px solid rgb(229,229,229);
+	
+}</string>
+          </property>
+          <property name="text">
+           <string>加入购物车</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="xia_num_5">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>80</y>
+            <width>21</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+
+	border:none;
+}</string>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_36">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>60</y>
+        <width>700</width>
+        <height>2</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_38">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>0</y>
+        <width>2</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page1">
+     <widget class="QPushButton" name="searchbt_4">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>10</y>
+        <width>41</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton{
+	image: url(:/search_hui.png);
+	border:none;
+}
+
+QPushButton:hover{
+	image: url(:/search.png);
+	
+	background-color: rgb(255, 255, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="search_5">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>0</y>
+        <width>111</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+	font:20px &quot;楷体&quot;;
+border:none;
+}</string>
+      </property>
+      <property name="text">
+       <string>2023/07/07</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="search_6">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>0</y>
+        <width>71</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font:20px &quot;楷体&quot;;
+border:none;
+border-right-color: rgb(230, 230, 230);
+</string>
+      </property>
+      <property name="text">
+       <string>11：30</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>200</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font:30px &quot;楷体&quot;;
+border-radius:20px;
+background-color: rgb(255, 255, 255);
+</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="table_main">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>60</y>
+        <width>481</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextEdit{
+border-bottom:rgb(230,230,230);
+background-color: rgb(230, 230, 230);
+} 
+QLabel{
+	background-color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="nameline_5">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>10</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font:20px &quot;楷体&quot;;
+border:none;</string>
+      </property>
+      <property name="text">
+       <string>张三</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="numline_5">
+      <property name="geometry">
+       <rect>
+        <x>549</x>
+        <y>40</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font:20px &quot;楷体&quot;;
+border:none;</string>
+      </property>
+      <property name="text">
+       <string>15913820903</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="avatar_5">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>0</y>
+        <width>60</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="images.qrc">:/2.bmp</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="nameline_6">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>80</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font:20px &quot;楷体&quot;;
+border:none;</string>
+      </property>
+      <property name="text">
+       <string>餐桌状态</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>90</y>
+        <width>72</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_72">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>451</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);
+font:20px &quot;楷体&quot;</string>
+      </property>
+      <property name="text">
+       <string>桌台状态      可用的     预留     正在使用</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_73">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>90</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:10px;
+background-color: rgb(0, 255, 127);
+border-color:1px rgb(230, 230, 230);
+font:20px &quot;楷体&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_74">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>90</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:10px;
+background-color: rgb(255, 170, 0);
+border-color:1px rgb(230, 230, 230);
+font:20px &quot;楷体&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_75">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>90</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:10px;
+background-color: rgb(255, 0, 0);
+border-color:1px rgb(230, 230, 230);
+font:20px &quot;楷体&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QStackedWidget" name="stackedWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>99</y>
+        <width>181</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+	border:none;
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>3</number>
+      </property>
+      <widget class="QWidget" name="page_13">
+       <widget class="QLineEdit" name="lineEdit_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>151</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:none;</string>
+        </property>
+        <property name="text">
+         <string>暂时无人使用</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_14">
+       <widget class="QLineEdit" name="s1_food1_name">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>113</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>food1_name</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="s1_food2_name">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>90</y>
+          <width>113</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>food2_name</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="food1_name_4">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>60</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>数量：</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="food1_name_5">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>120</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>数量：</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="s1_food1_num">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>60</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1num</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="s1_food2_num">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>120</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>2num</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_15">
+       <widget class="QLineEdit" name="s2_food2_name">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>90</y>
+          <width>113</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>food2_name</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="food1_name_6">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>120</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>数量：</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="food1_name_7">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>60</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>数量：</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="s2_food1_name">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>113</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>food1_name</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="s2_food3_name">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>150</y>
+          <width>113</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>food3_name</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="food1_name_10">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>180</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>数量：</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="s2_food1_num">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>60</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>1num</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="s2_food2_num">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>120</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>2num</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="s2_food3_num">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>180</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>3num</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_16"/>
+     </widget>
+     <widget class="QPushButton" name="pushButton_21">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>190</y>
+        <width>93</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget_18" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>141</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: rgb(255, 255, 255);
+	border-radius:20px;
+}
+
+QPushButton:focus{
+	background-color: rgb(0, 170, 255);
+}</string>
+      </property>
+      <widget class="QLabel" name="chair12">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>20</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="chair11">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>0</y>
+         <width>40</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_22">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>30</y>
+         <width>60</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="color_01">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>40</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:20px;
+background-color: rgb(0, 255, 127);
+border-color:1px rgb(230, 230, 230);
+font:20px &quot;楷体&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string> 01</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="chair14">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>40</y>
+         <width>20</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="chair13">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>100</y>
+         <width>40</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_19" native="true">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>150</y>
+        <width>141</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: rgb(255, 255, 255);
+	border-radius:20px;
+}
+
+QPushButton:focus{
+	background-color: rgb(0, 170, 255);
+}</string>
+      </property>
+      <widget class="QLabel" name="chair22">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>20</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="chair21">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>0</y>
+         <width>40</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="table2_bt">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>30</y>
+         <width>60</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="chair24">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>40</y>
+         <width>20</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="chair23">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>100</y>
+         <width>40</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="color_02">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>40</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:20px;
+background-color: rgb(0, 255, 127);
+border-color:1px rgb(230, 230, 230);
+font:20px &quot;楷体&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string> 02</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_20" native="true">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>150</y>
+        <width>181</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: rgb(255, 255, 255);
+	border-radius:20px;
+}
+
+QPushButton:focus{
+	background-color: rgb(0, 170, 255);
+}</string>
+      </property>
+      <widget class="QLabel" name="chair32">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>20</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="chair31">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>5</y>
+         <width>40</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="table3_bt">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>30</y>
+         <width>101</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="chair35">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>40</y>
+         <width>20</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="chair33">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>95</y>
+         <width>40</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="chair36">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>5</y>
+         <width>40</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="chair34">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>95</y>
+         <width>40</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_60">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>40</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:20px;
+background-color: rgb(0, 255, 127);
+border-color:1px rgb(230, 230, 230);
+font:20px &quot;楷体&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string> 03</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_21" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>310</y>
+        <width>81</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: rgb(255, 255, 255);
+	border-radius:20px;
+}
+
+QPushButton:focus{
+	background-color: rgb(0, 170, 255);
+}</string>
+      </property>
+      <widget class="QLabel" name="chair41">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>0</y>
+         <width>40</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="table4_bt">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>60</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="chair42">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>100</y>
+         <width>40</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_54">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:20px;
+background-color: rgb(0, 255, 127);
+border-color:1px rgb(230, 230, 230);
+font:20px &quot;楷体&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string> 04</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_22" native="true">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>310</y>
+        <width>221</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: rgb(255, 255, 255);
+	border-radius:20px;
+}
+
+QPushButton:focus{
+	background-color: rgb(0, 170, 255);
+}</string>
+      </property>
+      <widget class="QLabel" name="chair52">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>20</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="chair51">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>5</y>
+         <width>40</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="table5_bt">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>30</y>
+         <width>141</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="chair55">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>40</y>
+         <width>20</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="chair53">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>95</y>
+         <width>40</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="chair56">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>5</y>
+         <width>40</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="chair54">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>95</y>
+         <width>40</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_70">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>40</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:20px;
+background-color: rgb(0, 255, 127);
+border-color:1px rgb(230, 230, 230);
+font:20px &quot;楷体&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string> 05</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="chair57">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>5</y>
+         <width>40</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="chair58">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>95</y>
+         <width>40</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_23" native="true">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>310</y>
+        <width>141</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: rgb(255, 255, 255);
+	border-radius:20px;
+}
+
+QPushButton:focus{
+	background-color: rgb(0, 170, 255);
+}</string>
+      </property>
+      <widget class="QLabel" name="chair62">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>20</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="chair61">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>0</y>
+         <width>40</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="table6_bt">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>30</y>
+         <width>60</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="chair64">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>40</y>
+         <width>20</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="chair63">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>100</y>
+         <width>40</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_48">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>40</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:20px;
+background-color: rgb(0, 255, 127);
+border-color:1px rgb(230, 230, 230);
+font:20px &quot;楷体&quot;;
+</string>
+       </property>
+       <property name="text">
+        <string> 06</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page2">
+     <widget class="QPushButton" name="pushButton_58">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>20</y>
+        <width>120</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	border-radius:10px;
+	
+	background-color: rgb(255, 255, 255);
+}
+
+QPushButton:hover{
+	
+	background-color: rgb(0, 170, 255);
+}
+
+QPushButton:focus{
+	
+	background-color: rgb(0, 170, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>已完成</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_59">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>120</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	border-radius:10px;
+	
+	background-color: rgb(0, 170, 255);
+}
+
+QPushButton:hover{
+	
+	background-color: rgb(0, 170, 255);
+}
+
+QPushButton:focus{
+	
+	background-color: rgb(0, 170, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>处理中</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget_28" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>431</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+background-color: rgb(240, 240, 240);
+</string>
+      </property>
+      <widget class="QPushButton" name="pushButton_24">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>410</width>
+         <height>100</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-radius:20px;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:hover{
+	border:1px solid blue;
+}
+QPushButton:focus{
+	border:1px solid blue;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_130">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>100</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font:20px &quot;楷体&quot;;
+background-color: rgb(255, 255, 255);
+border:none;</string>
+       </property>
+       <property name="text">
+        <string>菜单：#114514</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_131">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>70</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font:20px &quot;楷体&quot;;
+background-color: rgb(255, 255, 255);
+border:none;</string>
+       </property>
+       <property name="text">
+        <string>桌台：#01</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_132">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>40</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font:20px &quot;楷体&quot;;
+background-color: rgb(255, 255, 255);
+border:none;</string>
+       </property>
+       <property name="text">
+        <string>订单：#114514</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_146">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>40</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+font:20px &quot;楷体&quot;;
+background-color: rgb(255, 255, 255);
+border:none;</string>
+       </property>
+       <property name="text">
+        <string>20:20pm</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_155">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>82</y>
+         <width>66</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font:20px &quot;楷体&quot;;
+background-color: rgb(255, 170, 0);
+border-radius:10px;</string>
+       </property>
+       <property name="text">
+        <string>在用餐</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QWidget" name="order_hide" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>150</y>
+         <width>421</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <widget class="QPushButton" name="pushButton_25">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>401</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border-radius:20px;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:hover{
+	border:1px solid blue;
+}
+QPushButton:focus{
+	border:1px solid blue;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_134">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>141</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font:20px &quot;楷体&quot;;
+background-color: rgb(255, 255, 255);
+border:none;</string>
+        </property>
+        <property name="text">
+         <string>订单：#114515</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_135">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>60</y>
+          <width>141</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font:20px &quot;楷体&quot;;
+background-color: rgb(255, 255, 255);
+border:none;</string>
+        </property>
+        <property name="text">
+         <string>桌台：#02</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_136">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>90</y>
+          <width>141</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font:20px &quot;楷体&quot;;
+background-color: rgb(255, 255, 255);
+border:none;</string>
+        </property>
+        <property name="text">
+         <string>菜单：#114515</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_147">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>30</y>
+          <width>81</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+font:20px &quot;楷体&quot;;
+background-color: rgb(255, 255, 255);
+border:none;</string>
+        </property>
+        <property name="text">
+         <string>20:30pm</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_156">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>70</y>
+          <width>66</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font:20px &quot;楷体&quot;;
+background-color: rgb(255, 170, 0);
+border-radius:10px;</string>
+        </property>
+        <property name="text">
+         <string>在用餐</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_32" native="true">
+      <property name="geometry">
+       <rect>
+        <x>439</x>
+        <y>-1</y>
+        <width>231</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+	border:none;
+}</string>
+      </property>
+      <widget class="QLineEdit" name="table_num">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>订单编号：</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_128">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>110</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>         桌  台：</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_129">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>140</y>
+         <width>113</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font:20px</string>
+       </property>
+       <property name="text">
+        <string>订单详情</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pay">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>419</y>
+         <width>161</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+	border:none;
+	border-radius:10px;
+	font：15px &quot;楷体&quot;;
+	
+background-color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string>已支付订单</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_133">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>350</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>支付方式</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="cash">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>380</y>
+         <width>51</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+font:20px &quot;kai&quot;;
+background-color:rgb(255,255,255);</string>
+       </property>
+       <property name="text">
+        <string>现金</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="wechat">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>380</y>
+         <width>51</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+font:20px &quot;kai&quot;;
+background-color:rgb(255,255,255);</string>
+       </property>
+       <property name="text">
+        <string>微信</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="Alipay">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>380</y>
+         <width>71</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:10px;
+font:20px &quot;kai&quot;;
+background-color:rgb(255,255,255);</string>
+       </property>
+       <property name="text">
+        <string>支付宝</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_137">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>320</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>合计</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_138">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>320</y>
+         <width>21</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>￥</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_139">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>260</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>小计</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_140">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>290</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>优惠</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_141">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>290</y>
+         <width>21</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>￥</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_142">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>260</y>
+         <width>21</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>￥</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="xiaoji">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>260</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_144">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>290</y>
+         <width>21</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="heji">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>320</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>170</y>
+         <width>231</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <attribute name="horizontalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="horizontalHeaderMinimumSectionSize">
+        <number>30</number>
+       </attribute>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>220</number>
+       </attribute>
+       <attribute name="verticalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderDefaultSectionSize">
+        <number>50</number>
+       </attribute>
+       <row>
+        <property name="text">
+         <string>新建行</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>新建行</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>新建行</string>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>新建列</string>
+        </property>
+       </column>
+      </widget>
+      <widget class="QLineEdit" name="ding_num">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>80</y>
+         <width>113</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0000</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="zhuo_num">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>110</y>
+         <width>113</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0000</string>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLineEdit" name="nameline_4">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>10</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font:20px &quot;楷体&quot;;
+border:none;</string>
+      </property>
+      <property name="text">
+       <string>张三</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="numline_4">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>50</y>
+        <width>121</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font:20px &quot;楷体&quot;;
+border:none;</string>
+      </property>
+      <property name="text">
+       <string>15913820903</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="avatar_4">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>10</y>
+        <width>60</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="images.qrc">:/2.bmp</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page3">
+     <widget class="QWidget" name="widget_10" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>9</y>
+        <width>651</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+	background-color: rgb(255, 255, 255);
+	border-radius:30px;
+}
+QPushButton{
+	border-radius:10px;
+	font:20px;
+	border-left:1px solid rgb(229,229,229);
+	border-top:1px solid rgb(229,229,229);
+}
+QPushButton:hover{
+	border-color: rgb(0, 170, 255);
+}
+
+QPushButton:focus{
+	border-color: rgb(0, 170, 255);
+}
+QLineEdit{
+	font:20px &quot;楷体&quot;;
+}
+
+</string>
+      </property>
+      <widget class="QLineEdit" name="lineEdit_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>150</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font:30px &quot;楷体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>饮食健康</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_15">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>49</y>
+         <width>91</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>72</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:0px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="images.qrc">:/changshi .png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_29">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>140</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>小常识</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_16">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>50</y>
+         <width>101</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_17">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>50</y>
+         <width>91</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_18">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>50</y>
+         <width>101</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_19">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>50</y>
+         <width>100</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_30">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>140</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>一日三餐</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>60</y>
+         <width>72</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:0px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="images.qrc">:/health_food.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>60</y>
+         <width>72</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:0px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="images.qrc">:/chun.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_31">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>140</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>春</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>60</y>
+         <width>81</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:0px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="images.qrc">:/summer.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_32">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>140</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>夏</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>60</y>
+         <width>72</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:0px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="images.qrc">:/qiu.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_33">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>140</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>秋</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_20">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>50</y>
+         <width>100</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>60</y>
+         <width>81</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius:0px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="images.qrc">:/dong.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_34">
+       <property name="geometry">
+        <rect>
+         <x>580</x>
+         <y>140</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>冬</string>
+       </property>
+      </widget>
+      <widget class="QStackedWidget" name="stackedWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>180</y>
+         <width>651</width>
+         <height>261</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="page_4">
+        <widget class="QLineEdit" name="lineEdit_35">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>0</y>
+           <width>71</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>小常识</string>
+         </property>
+        </widget>
+        <widget class="QTextEdit" name="textEdit_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>631</width>
+           <height>121</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(240, 240, 240);
+border-radius:5px;</string>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'楷体'; font-size:20px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:12pt;&quot;&gt;绿茶醒酒的错误观念&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun'; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:10pt;&quot;&gt;很多人认为喝酒后再喝些绿茶能够解救，其实绿茶和酒&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:10pt;&quot;&gt;一起饮用会伤身，染上胃炎还算轻的，严重的还有可能&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:10pt;&quot;&gt;患上胃溃疡。这是因为绿茶中的吗啡因含量比较高&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun'; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QTextEdit" name="textEdit_4">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>150</y>
+           <width>631</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(240, 240, 240);
+border-radius:15px;</string>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'楷体'; font-size:20px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:12pt;&quot;&gt;餐后水果胀气烧心&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun'; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:10pt;&quot;&gt;一般人们都知道吃水果养生，一般餐后也会上水果盘，&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:10pt;&quot;&gt;殊不知，餐后立马吃水果其实对胃的伤害很大。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:10pt;&quot;&gt;日常的食物主要是脂肪、碳水化合物、蛋白质等...&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'SimSun'; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_9">
+         <property name="geometry">
+          <rect>
+           <x>470</x>
+           <y>30</y>
+           <width>121</width>
+           <height>101</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-radius:0px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="images.qrc">:/cha.webp</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_10">
+         <property name="geometry">
+          <rect>
+           <x>490</x>
+           <y>160</y>
+           <width>90</width>
+           <height>90</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-radius:0px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="images.qrc">:/fruit.jfif</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_5"/>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page4">
+     <widget class="QWidget" name="widget_5" native="true">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>621</width>
+        <height>450</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+	background-color: rgb(240, 240, 240);
+	border-radius:30px;
+}
+QPushButton{
+	border-radius:10px;
+	font:20px;
+	border-left:1px solid rgb(229,229,229);
+	border-top:1px solid rgb(229,229,229);
+}
+QPushButton:hover{
+	background-color: rgb(0, 170, 255);
+}
+
+QPushButton:focus{
+	background-color: rgb(0, 170, 255);
+}
+</string>
+      </property>
+      <widget class="QWidget" name="widget_6" native="true">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>70</y>
+         <width>581</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget{
+	
+	background-color: rgb(255, 255, 255);
+}</string>
+       </property>
+       <widget class="QLabel" name="label_wode_2">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>10</y>
+          <width>50</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="images.qrc">:/Patrick.jfif</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_5">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>70</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font:20px &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>派大星</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="liuyan">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>20</y>
+          <width>331</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font:20px &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>今天的菜很好吃</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_22">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>20</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>2023/11/11</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_12">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>60</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	
+	
+	background-color: rgb(0, 170, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>回复</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="pushButton_9">
+       <property name="geometry">
+        <rect>
+         <x>21</x>
+         <y>25</y>
+         <width>100</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border:none;
+	background-color: rgb(0, 170, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>最新</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_11">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>25</y>
+         <width>100</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border:none;
+}</string>
+       </property>
+       <property name="text">
+        <string>最热</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget_7" native="true">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>190</y>
+         <width>581</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget{
+	
+	background-color: rgb(255, 255, 255);
+}</string>
+       </property>
+       <widget class="QLabel" name="label_wode_3">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>10</y>
+          <width>50</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="images.qrc">:/Patrick.jfif</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_23">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>70</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font:20px &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>派大星</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="liuyan_2">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>20</y>
+          <width>151</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font:20px &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>今天的菜很好吃</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_25">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>20</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>2023/11/11</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_13">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>60</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	
+	
+	background-color: rgb(0, 170, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>回复</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="widget_9" native="true">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>310</y>
+         <width>581</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget{
+	
+	background-color: rgb(240, 240, 240);
+}</string>
+       </property>
+       <widget class="QLabel" name="label_wode_4">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>10</y>
+          <width>50</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="images.qrc">:/2.bmp</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_26">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>70</y>
+          <width>51</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font:20px &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>张三</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_27">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>20</y>
+          <width>151</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font:20px &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>今天的菜很好吃</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_28">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>20</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>2023/11/11</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_14">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>60</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	
+	
+	background-color: rgb(0, 170, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>回复</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page5">
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>110</y>
+        <width>81</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>-1</x>
+        <y>-1</y>
+        <width>671</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+	background-color: rgb(230, 230, 230);
+}
+QLineEdit{
+	font:25px &quot;楷体&quot;;
+}
+QPushButton:hover{
+	background-color: rgb(0, 170, 255);
+}
+
+QPushButton:focus{
+	background-color: rgb(0, 170, 255);
+}</string>
+      </property>
+      <widget class="QWidget" name="widget_2" native="true">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>10</y>
+         <width>200</width>
+         <height>450</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget{
+	background-color: rgb(255, 255, 255);
+	border-radius:30px;
+}
+QPushButton{
+	border-radius:10px;
+	font:20px;
+	border-left:1px solid rgb(229,229,229);
+	border-top:1px solid rgb(229,229,229);
+}
+QPushButton:hover{
+	background-color: rgb(0, 170, 255);
+}
+
+QPushButton:focus{
+	background-color: rgb(0, 170, 255);
+}
+</string>
+       </property>
+       <widget class="QLabel" name="label_wode">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>20</y>
+          <width>100</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="images.qrc">:/2.bmp</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>140</y>
+          <width>159</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	font:&quot;楷体&quot;;
+}</string>
+        </property>
+        <property name="text">
+         <string>    张 三</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_6">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>190</y>
+          <width>159</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>15913820903</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>250</y>
+          <width>150</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>个人信息</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>300</y>
+          <width>150</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>修改密码</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QStackedWidget" name="stackedWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>10</y>
+         <width>411</width>
+         <height>450</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QStackedWidget{
+	
+	background-color: rgb(255, 255, 255);
+}</string>
+       </property>
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <widget class="QWidget" name="page_2">
+        <widget class="QWidget" name="widget_3" native="true">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>411</width>
+           <height>450</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+	background-color: rgb(255, 255, 255);
+	border-radius:30px;
+}
+QPushButton{
+	border-radius:10px;
+	font:20px;
+	border-left:1px solid rgb(229,229,229);
+	border-top:1px solid rgb(229,229,229);
+}
+
+QPushButton:hover{
+	background-color: rgb(0, 170, 255);
+}
+
+QPushButton:focus{
+	background-color: rgb(0, 170, 255);
+}
+</string>
+         </property>
+         <widget class="QLineEdit" name="lineEdit_7">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>111</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>个人信息</string>
+          </property>
+         </widget>
+         <widget class="QRadioButton" name="radio_nan">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>50</y>
+            <width>40</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>男</string>
+          </property>
+         </widget>
+         <widget class="QRadioButton" name="radio_nv">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>50</y>
+            <width>40</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>女</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_8">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>80</y>
+            <width>61</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>姓名</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_9">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>110</y>
+            <width>200</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border-radius:10px;
+	background-color: rgb(230, 230, 230);
+}</string>
+          </property>
+          <property name="text">
+           <string>张三</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_10">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>150</y>
+            <width>61</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>邮箱</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_11">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>190</y>
+            <width>370</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border-radius:10px;
+	background-color: rgb(230, 230, 230);
+}</string>
+          </property>
+          <property name="text">
+           <string>2762168023@qq.com     已验证</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_12">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>230</y>
+            <width>61</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>地址</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_13">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>270</y>
+            <width>370</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border-radius:10px;
+	background-color: rgb(230, 230, 230);
+}</string>
+          </property>
+          <property name="text">
+           <string>广东省xx市</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_14">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>310</y>
+            <width>61</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>电话</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_15">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>350</y>
+            <width>370</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border-radius:10px;
+	background-color: rgb(230, 230, 230);
+}</string>
+          </property>
+          <property name="text">
+           <string>15913820903</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_5">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>400</y>
+            <width>150</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>放弃更改</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_6">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>400</y>
+            <width>150</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>保存更改</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_2">
+          <property name="geometry">
+           <rect>
+            <x>260</x>
+            <y>190</y>
+            <width>31</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+	
+	background-color: rgb(230, 230, 230);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="images.qrc">:/dui.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_3">
+        <widget class="QWidget" name="widget_4" native="true">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>411</width>
+           <height>450</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+	background-color: rgb(255, 255, 255);
+	border-radius:30px;
+}
+QPushButton{
+	border-radius:10px;
+	font:20px;
+	border-left:1px solid rgb(229,229,229);
+	border-top:1px solid rgb(229,229,229);
+}
+
+QPushButton:hover{
+	background-color: rgb(0, 170, 255);
+}
+
+QPushButton:focus{
+	background-color: rgb(0, 170, 255);
+}
+</string>
+         </property>
+         <widget class="QLineEdit" name="lineEdit_16">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>111</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_17">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>80</y>
+            <width>161</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>请输入原密码</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_18">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>110</y>
+            <width>300</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border-radius:10px;
+	background-color: rgb(230, 230, 230);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_19">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>200</y>
+            <width>181</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>请输入新密码</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_20">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>240</y>
+            <width>300</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+	border-radius:10px;
+	background-color: rgb(230, 230, 230);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="readOnly">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_7">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>400</y>
+            <width>150</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>放弃更改</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_8">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>400</y>
+            <width>150</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>保存更改</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_11">
+     <widget class="QWidget" name="widget_tianjia" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>320</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <widget class="QWidget" name="widget_16" native="true">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>300</width>
+         <height>180</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:20px;</string>
+       </property>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>60</y>
+          <width>151</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>添加菜品</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_main1_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>230</y>
+        <width>321</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <widget class="QWidget" name="widget_xia_4" native="true">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>301</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget{
+	background-color: rgb(255, 255, 255);
+	border-radius:20px;
+	border:1px solid black;
+}
+
+QWidget:hover{
+	border-radius:20px;
+	border:1px solid blue;
+}
+QToolButton{
+
+	border-radius:15px;
+}
+QPushButton:hover{
+	background-color: rgb(0, 170, 255);
+}
+QToolButton:hover{
+	color: rgb(0, 170, 255);
+}</string>
+       </property>
+       <widget class="QToolButton" name="new_jia">
+        <property name="geometry">
+         <rect>
+          <x>79</x>
+          <y>140</y>
+          <width>30</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>+</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="new_text">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>60</y>
+          <width>174</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	border:none;
+	font:20px &quot;楷体&quot;;
+}</string>
+        </property>
+        <property name="text">
+         <string>Q弹饱满，蒜香浓郁</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="new_picture">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>10</y>
+          <width>101</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+	background-color: ;
+	background-color: rgb(230, 230, 230);
+	border-radius:15px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="images.qrc">:/xia.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="new_num">
+        <property name="geometry">
+         <rect>
+          <x>49</x>
+          <y>140</y>
+          <width>21</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+
+	border:none;
+}</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="xia_bt_2">
+        <property name="geometry">
+         <rect>
+          <x>129</x>
+          <y>140</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	border-radius:10px;
+	font:20px;
+	border-left:1px solid rgb(229,229,229);
+	border-top:1px solid rgb(229,229,229);
+	
+}</string>
+        </property>
+        <property name="text">
+         <string>加入购物车</string>
+        </property>
+       </widget>
+       <widget class="QToolButton" name="new_jian">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>140</y>
+          <width>30</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>-</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="new_name">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>20</y>
+          <width>179</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	border:none;
+	font:30px &quot;楷体&quot;;
+}</string>
+        </property>
+        <property name="text">
+         <string>蒜蓉小龙虾</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="new_piece">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>90</y>
+          <width>81</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	border:none;
+	font:20px &quot;楷体&quot;;
+}</string>
+        </property>
+        <property name="text">
+         <string>30.00</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="new_piece_2">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>90</y>
+          <width>21</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	border:none;
+	font:20px &quot;楷体&quot;;
+}</string>
+        </property>
+        <property name="text">
+         <string>￥</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_tianjia_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>10</y>
+        <width>320</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <widget class="QWidget" name="widget_17" native="true">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>300</width>
+         <height>180</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:20px;</string>
+       </property>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>60</y>
+          <width>151</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>添加菜品</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="order1" native="true">
+      <property name="geometry">
+       <rect>
+        <x>349</x>
+        <y>227</y>
+        <width>201</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <widget class="QLineEdit" name="order1_name">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+       <property name="text">
+        <string>蒜蓉小龙虾</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_40">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>0</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+       <property name="text">
+        <string>单价：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="order1_piece">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>0</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+       <property name="text">
+        <string>30</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_42">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+       <property name="text">
+        <string>数量：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_43">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>30</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+       <property name="text">
+        <string>总价：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="order1_num">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>30</y>
+         <width>21</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="order1_sum">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>30</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+       <property name="text">
+        <string>60</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="order2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>290</y>
+        <width>200</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <widget class="QLineEdit" name="order2_name">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+       <property name="text">
+        <string>鱼香肉丝</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_47">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>0</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+       <property name="text">
+        <string>单价：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="order2_piece">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>0</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+       <property name="text">
+        <string>30</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_49">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+       <property name="text">
+        <string>数量：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_50">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>30</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+       <property name="text">
+        <string>总价：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="order2_num">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>30</y>
+         <width>21</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="order2_sum">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>30</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+       <property name="text">
+        <string>60</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="order3" native="true">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>360</y>
+        <width>200</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <widget class="QLineEdit" name="order3_name">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+       <property name="text">
+        <string>鱼香肉丝</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_54">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>0</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+       <property name="text">
+        <string>单价：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="order3_piece">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>0</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+       <property name="text">
+        <string>30</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_56">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+       <property name="text">
+        <string>数量：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_57">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>30</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+       <property name="text">
+        <string>总价：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="order3_num">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>30</y>
+         <width>21</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="order3_sum">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>30</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;</string>
+       </property>
+       <property name="text">
+        <string>60</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_12">
+     <widget class="QWidget" name="widget_jiacaikuang" native="true">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>9</y>
+        <width>571</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <widget class="QPushButton" name="inputBt">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>170</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-radius:20px;
+	
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+       <property name="text">
+        <string>介绍</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_10">
+       <property name="geometry">
+        <rect>
+         <x>181</x>
+         <y>334</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>kai</family>
+         <pointsize>-1</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-radius:20px;
+	
+	background-color: rgb(230, 230, 230);
+	font:30px &quot;kai&quot;;
+}
+
+QPushButton:hover{
+	
+	background-color: rgb(0, 170, 255);
+}
+QPushButton:focus{
+	
+	background-color: rgb(0, 170, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>确认</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="fontBt">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>230</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-radius:20px;
+	
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+       <property name="text">
+        <string>价格</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="filebt">
+       <property name="geometry">
+        <rect>
+         <x>31</x>
+         <y>50</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:hover{
+	
+	background-color: rgb(0, 170, 255);
+}
+QPushButton:focus{
+	
+	background-color: rgb(0, 170, 255);
+}
+
+QPushButton{
+	border-radius:20px;
+
+	
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+       <property name="text">
+        <string>选择文件</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="edit_piece">
+       <property name="geometry">
+        <rect>
+         <x>151</x>
+         <y>230</y>
+         <width>401</width>
+         <height>41</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="fileEdit">
+       <property name="geometry">
+        <rect>
+         <x>151</x>
+         <y>50</y>
+         <width>401</width>
+         <height>41</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="edit_name">
+       <property name="geometry">
+        <rect>
+         <x>151</x>
+         <y>110</y>
+         <width>401</width>
+         <height>41</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="edit_text">
+       <property name="geometry">
+        <rect>
+         <x>151</x>
+         <y>170</y>
+         <width>401</width>
+         <height>41</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="colorBt">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>110</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	border-radius:20px;
+	
+	background-color: rgb(230, 230, 230);
+}</string>
+       </property>
+       <property name="text">
+        <string>请输入菜名</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_37">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>0</y>
+      <width>2</width>
+      <height>1000</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>814</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
